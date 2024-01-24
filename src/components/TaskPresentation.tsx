@@ -18,7 +18,7 @@ export const TaskPresentation = (props: ITaskPresentationProps) => {
                 <li>
                     <p>{props.oneTask.taskName}</p>
                     <input type="checkbox" checked={props.oneTask.isDone}/>
-                    <button onClick={handleDoneClick}>Task done</button>
+                    <button className="button" onClick={handleDoneClick}>Task done</button>
                 </li>
             </ul>
        </div>
