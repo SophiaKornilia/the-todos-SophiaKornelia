@@ -1,15 +1,18 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
+
 
 interface IAddTaskProps {
     addTask: (theNewTask: string) => void;
+    
 }
 
 export const AddTask = (props: IAddTaskProps) => {
     const [newTaskName, setNewTaskName] = useState("");
 
-    const handleClick = (e: React.FormEvent) => {
+    const handleClick = (e: FormEvent) => {
         e.preventDefault(); // Förhindrar att sidan laddas om när jag lägger till
         props.addTask(newTaskName);
+
     }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

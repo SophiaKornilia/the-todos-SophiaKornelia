@@ -7,20 +7,17 @@ interface ITaskPresentationProps {
 }
 
 export const TaskPresentation = (props: ITaskPresentationProps) => {
-   const handleDoneClick = () =>{
-    props.doTask(props.oneTask.taskName);
-   }
+    const handleDoneClick = () => {
+        props.doTask(props.oneTask.taskName);
+    }
 
- 
+
+
     return (
-       <div>
-            <ul>
-                <li>
-                    <p>{props.oneTask.taskName}</p>
-                    <input type="checkbox" checked={props.oneTask.isDone}/>
-                    <button className="button" onClick={handleDoneClick}>Task done</button>
-                </li>
-            </ul>
-       </div>
-    ) 
+        <>
+            <p>{props.oneTask.taskName}</p>
+            <input type="checkbox"  checked={props.oneTask.isDone} />
+            <button className="button" onClick={handleDoneClick}>Task done</button>
+        </>
+    )
 }
