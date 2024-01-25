@@ -1,11 +1,10 @@
 interface IRemoveTask {
-    removeATask: (taskName:string) => void; 
+    removeATask: () => void; 
 }
 
 export const RemoveTask = (props: IRemoveTask) => {
     const handleRemove = () => {
-        props.removeATask(""); //Är det ett okej sätt att göra det på?
-
+        props.removeATask();
     }
 
     return (

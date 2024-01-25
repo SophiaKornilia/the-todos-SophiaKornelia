@@ -4,3 +4,4 @@ export class Task {
         public isDone: boolean,
     ) {}
 }
+
