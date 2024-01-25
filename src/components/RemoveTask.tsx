@@ -1,16 +1,15 @@
 interface IRemoveTask {
-    removeATask: () => void; 
+  removeATask: () => void;
 }
 
 export const RemoveTask = (props: IRemoveTask) => {
-    const handleRemove = () => {
-        props.removeATask();
-    }
+  const handleRemove = () => {
+    props.removeATask();
+  };
 
-    return (
-        <>
-           <button onClick={handleRemove}>Remove task</button>
-        </>
-    )
-}
-
+  return (
+    <>
+      <button onClick={handleRemove}>Remove task</button>
+    </>
+  );
+};
