@@ -12,8 +12,15 @@ export const TaskPresentation = (props: ITaskPresentationProps) => {
 
   return (
     <>
-      <p>{props.oneTask.taskName}</p>
-      <input type="checkbox" readOnly checked={props.oneTask.isDone} />
+      <p>
+        <input
+          type="checkbox"
+          readOnly
+          checked={props.oneTask.isDone}
+          id="checkmarks"
+        />
+        {props.oneTask.taskName}
+      </p>
       <button className="button" onClick={handleDoneClick}>
         Task done
       </button>
