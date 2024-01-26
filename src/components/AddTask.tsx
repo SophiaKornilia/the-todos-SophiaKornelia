@@ -18,11 +18,7 @@ export const AddTask = (props: IAddTaskProps) => {
   };
   return (
     <form>
-      <label>Add a new task:</label>
-      <br />
-      <input type="text" value={newTaskName} onChange={handleChange} />
-      <br />
-      <br />
+      <input type="text" value={newTaskName} onChange={handleChange} placeholder="New task" id="input"/>
       <button onClick={handleClick}>Save</button>
     </form>
   );

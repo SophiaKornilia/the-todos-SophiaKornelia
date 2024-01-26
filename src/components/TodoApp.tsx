@@ -44,21 +44,24 @@ export const TodoApp = () => {
       <h1>Todolist</h1>
       <AddTask addTask={addANewTask} /> <br />
       <button onClick={handleSort}>Sort list</button>
-      <ol>
+      <ul>
         {tasks.map((aTask) => {
           // skickar in ett Task objekt som jag döpt variabeln till aTask
           return (
             <li key={aTask.taskName}>
-              <TaskPresentation
-                oneTask={aTask}
-                doTask={taskDone}
-                key={aTask.taskName}
-              />
-              <RemoveTask removeATask={() => removeTask(aTask.taskName)} />
+              <div id="list-btn-style">
+                
+                <TaskPresentation
+                  oneTask={aTask}
+                  doTask={taskDone}
+                  key={aTask.taskName}
+                />
+                <RemoveTask removeATask={() => removeTask(aTask.taskName)} />
+              </div>
             </li>
           );
         })}
-      </ol>
+      </ul>
     </>
   );
 };
