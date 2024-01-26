@@ -4,8 +4,53 @@
   padding: 2rem;
   text-align: center;
   background-color: #73a16c;
+  border-radius: 8px;
 }
 
 body {
   background-color: #004225;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+}
+
+p {
+  font-family: "Give You Glory", cursive;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#checkmarks {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-right: 10px;
+}
+
+li {
+  /* border: 2px solid #004225;  */
+  margin: 10px 0px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #8fb389;
+}
+
+input {
+  top: 0;
+  left: 0;
+  height: 38px;
+  background-color: #eee;
+  margin-right: 10px;
+  border-radius: 8px; 
 }

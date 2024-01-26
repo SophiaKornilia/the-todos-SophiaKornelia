@@ -41,7 +41,7 @@ export const TodoApp = () => {
 
   return (
     <>
-      <h1>Todolist</h1>
+      <h1>Things to do</h1>
       <AddTask addTask={addANewTask} /> <br />
       <button onClick={handleSort}>Sort list</button>
       <ul>
